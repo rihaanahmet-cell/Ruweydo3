@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruweyda Books Shop</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+
+    <h1>Ruweyda books shop</h1>
+
+    <div class="menu">
+        <button onclick="showSection('home')">🏠 Home</button>
+        <button onclick="showSection('about')">ℹ️ About</button>
+        <button onclick="showSection('news')">📰 News</button>
+        <button onclick="showSection('contact')">📞 Contact Us</button>
+    </div>
+
+    <!-- Home -->
+    <div id="home" class="section">
+        <h2>First page</h2>
+        <p>Ku soo dhawaada Ruweyda books shop waxaad inaga heleysaa noocyo badan oo books ah</p>
+
+        <h2>waxa aad inaga heleysaa</h2>
+        <p>Books ku qoran luqadaha Somali, English and Arabic</p>
+
+        <h2>Discount</h2>
+        <p>Inaga iibso labo buug ka dibna hel hal book free ah</p>
+    </div>
+
+    <!-- About -->
+    <div id="about" class="section">
+        <h2>About</h2>
+        <p>Ruweyda books shop waa goob iibisa buugaag kala duwan oo tayo leh.</p>
+    </div>
+
+    <!-- News -->
+    <div id="news" class="section">
+        <h2>News</h2>
+        <p>Waxaan dhawaan keeneynaa buugaag cusub iyo offers.</p>
+    </div>
+
+    <!-- Contact -->
+    <div id="contact" class="section">
+        <h2>Contact Us</h2>
+        <p>📧 Email: info@ruweydabooks.com</p>
+        <p>📞 Phone: +252 61 4596809</p>
+        <p>📍 location: Karaan</p>
+    </div>
+
+    <p class="footer">Copyright © with Ruweyda</p>
+
+    <script>
+        function showSection(id) {
+            let sections = document.getElementsByClassName("section");
+            for (let i = 0; i < sections.length; i++) {
+                sections[i].style.display = "none";
+            }
+            document.getElementById(id).style.display = "block";
+        }
+
+        // default show
+        document.getElementById("home").style.display = "block";
+    </script>
+
+</body>
+</html>
